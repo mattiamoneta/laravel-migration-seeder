@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,12 @@
 <body>
     <div class="container">
         <div class="row py-5">
-            @yield('result')
+            <div class="card">
+                <div class="card-body">
+                    @yield('result')
+                </div>
+              </div>
+           
         </div>
     </div>
 </body>

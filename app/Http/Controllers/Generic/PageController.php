@@ -9,7 +9,7 @@ use App\Models\Train;
 class PageController extends Controller
 {
     public function index(){
-           $trains = Train::where('departure','like', date('Y-m-d').'%')->get();
-            return view('index',compact('trains'));
+        $trains = Train::where('departure','like', date('Y-m-d').'%')->get();
+        return view('index',compact('trains'));
     }
 }
